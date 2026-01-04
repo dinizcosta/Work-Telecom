@@ -1,0 +1,21 @@
+# App de Registro de Produção Diária - AppSheet
+
+Este projeto consiste em uma solução No-Code desenvolvida com **AppSheet** e **Google Sheets** para otimizar o registro de campo de equipes técnicas (Telecom/Fibra Óptica).
+
+## 🚀 Problema Resolvido
+Substituição de formulários de papel ou preenchimento manual de planilhas complexas por uma interface mobile intuitiva, evitando erros de cálculo e perda de dados.
+
+## 🛠️ Funcionalidades
+- **Interface Mobile:** Registro de Tickets, ID de Cabos e Metragem diretamente do campo.
+- **Cálculos Automáticos:** Cálculo de KM (Km Fim - Km Início) processado via `App Formula` no AppSheet.
+- **Relatórios Dinâmicos:** Uso da função `QUERY` no Google Sheets para espelhar dados da aba de input para uma aba de relatório formatada automaticamente.
+- **Validação de Dados:** Prevenção de erros de inserção e chaves primárias únicas.
+
+## 📂 Estrutura do Projeto
+- `Aba Dados`: Banco de dados bruto onde o AppSheet grava as informações.
+- `Aba Relatório`: Interface de saída formatada para impressão/visualização gerencial.
+
+## 💡 Aprendizados Técnicos
+- Configuração de cabeçalhos dinâmicos em planilhas para leitura de APIs.
+- Expressões matemáticas no AppSheet: `[Km fim] - [km Inicio]`.
+- Manipulação de dados com `=QUERY()` para organização de Dashboards.
